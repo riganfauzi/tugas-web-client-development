@@ -1,10 +1,10 @@
 # Tugas mata kuliah Web Client Development
 
-Deskripsi
+## Deskripsi
 
 Repositori ini berisi implementasi JavaScript untuk beberapa tugas pemrograman dasar, seperti menghitung luas persegi panjang, menghitung sifat-sifat lingkaran, menentukan sudut segitiga, menghitung selisih tanggal, dan mengambil inisial dari nama.
 
-Tugas dan Implementasi
+## Tugas dan Implementasi
 
 1. Menghitung Luas Persegi Panjang
 
