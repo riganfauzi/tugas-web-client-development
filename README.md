@@ -37,6 +37,7 @@ Contoh Penggunaan:
 hitungLingkaran(5);
 // Output: diameter = 10, keliling = 31.4159, luas = 78.539
 
+#
 
 3️⃣ Menentukan Sudut Ketiga dari Segitiga
 
@@ -50,6 +51,7 @@ Contoh Penggunaan:
 
 console.log(hitungSudutKetiga(80, 65)); // Output: 35
 
+#
 
 4️⃣ Menghitung Selisih Hari antara Dua Tanggal
 
@@ -61,6 +63,7 @@ Contoh Penggunaan:
 
 console.log(selisihHari("2024-03-19", "2024-03-21")); // Output: 2
 
+#
 
 5️⃣ Mengambil Inisial dari Nama
 
