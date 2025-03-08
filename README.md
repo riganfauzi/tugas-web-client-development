@@ -75,4 +75,6 @@ Contoh Penggunaan:
 
 console.log(ambilInisial("John Doe")); // Output: JD
 
+#
+
 ![gambar](images/tugas.png)
