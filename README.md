@@ -1,69 +1,70 @@
 # Tugas mata kuliah Web Client Development
 
-## Deskripsi
+## 📌 Deskripsi
 
 Repositori ini berisi implementasi JavaScript untuk beberapa tugas pemrograman dasar, seperti menghitung luas persegi panjang, menghitung sifat-sifat lingkaran, menentukan sudut segitiga, menghitung selisih tanggal, dan mengambil inisial dari nama.
 
-## Tugas dan Implementasi
+## 📋 Tugas yang Dikerjakan
 
-1. Menghitung Luas Persegi Panjang
+1️⃣ Menghitung Luas Persegi Panjang
 
 Fungsi: hitungLuasPersegiPanjang(panjang, lebar)
 
-Input: Panjang dan lebar dari persegi panjang.
+Deskripsi: Menghitung luas persegi panjang dengan rumus panjang × lebar.
 
-Output: Luas persegi panjang.
-
-Contoh:
+Contoh Penggunaan:
 
 console.log(hitungLuasPersegiPanjang(5, 3)); // Output: 15
 
-2. Menghitung Diameter, Keliling, dan Luas Lingkaran
+2️⃣ Menghitung Diameter, Keliling, dan Luas Lingkaran
 
 Fungsi: hitungLingkaran(jariJari)
 
-Input: Jari-jari lingkaran.
+Deskripsi: Menghitung diameter, keliling, dan luas lingkaran berdasarkan jari-jari yang diberikan.
 
-Output: Diameter, keliling, dan luas lingkaran.
+Rumus:
 
-Contoh:
+Diameter = 2 × jari-jari
+
+Keliling = 2 × π × jari-jari
+
+Luas = π × jari-jari²
+
+Contoh Penggunaan:
 
 hitungLingkaran(5);
 // Output: diameter = 10, keliling = 31.4159, luas = 78.539
 
-3. Menentukan Sudut Ketiga dari Segitiga
+3️⃣ Menentukan Sudut Ketiga dari Segitiga
 
 Fungsi: hitungSudutKetiga(sudutA, sudutB)
 
-Input: Dua sudut dari segitiga.
+Deskripsi: Menentukan sudut ketiga dari segitiga berdasarkan dua sudut yang diketahui.
 
-Output: Sudut ketiga.
+Rumus: 180 - (sudutA + sudutB)
 
-Contoh:
+Contoh Penggunaan:
 
 console.log(hitungSudutKetiga(80, 65)); // Output: 35
 
-4. Menghitung Selisih Hari antara Dua Tanggal
+4️⃣ Menghitung Selisih Hari antara Dua Tanggal
 
 Fungsi: selisihHari(tanggal1, tanggal2)
 
-Input: Dua tanggal dalam format "YYYY-MM-DD".
+Deskripsi: Menghitung jumlah hari antara dua tanggal yang diberikan dalam format YYYY-MM-DD.
 
-Output: Selisih hari antara kedua tanggal.
-
-Contoh:
+Contoh Penggunaan:
 
 console.log(selisihHari("2024-03-19", "2024-03-21")); // Output: 2
 
-5. Mengambil Inisial dari Nama
+5️⃣ Mengambil Inisial dari Nama
 
 Fungsi: ambilInisial(nama)
 
-Input: Nama lengkap.
+Deskripsi: Mengambil huruf pertama dari setiap kata dalam nama dan mengubahnya menjadi huruf besar.
 
-Output: Inisial dalam huruf besar.
-
-Contoh:
+Contoh Penggunaan:
 
 console.log(ambilInisial("John Doe")); // Output: JD
+
 
