@@ -16,6 +16,7 @@ Contoh Penggunaan:
 
 console.log(hitungLuasPersegiPanjang(5, 3)); // Output: 15
 
+
 2️⃣ Menghitung Diameter, Keliling, dan Luas Lingkaran
 
 Fungsi: hitungLingkaran(jariJari)
@@ -35,6 +36,7 @@ Contoh Penggunaan:
 hitungLingkaran(5);
 // Output: diameter = 10, keliling = 31.4159, luas = 78.539
 
+
 3️⃣ Menentukan Sudut Ketiga dari Segitiga
 
 Fungsi: hitungSudutKetiga(sudutA, sudutB)
@@ -47,6 +49,7 @@ Contoh Penggunaan:
 
 console.log(hitungSudutKetiga(80, 65)); // Output: 35
 
+
 4️⃣ Menghitung Selisih Hari antara Dua Tanggal
 
 Fungsi: selisihHari(tanggal1, tanggal2)
@@ -56,6 +59,7 @@ Deskripsi: Menghitung jumlah hari antara dua tanggal yang diberikan dalam format
 Contoh Penggunaan:
 
 console.log(selisihHari("2024-03-19", "2024-03-21")); // Output: 2
+
 
 5️⃣ Mengambil Inisial dari Nama
 
@@ -67,4 +71,4 @@ Contoh Penggunaan:
 
 console.log(ambilInisial("John Doe")); // Output: JD
 
-
+![gambar](images/tugas.png)
