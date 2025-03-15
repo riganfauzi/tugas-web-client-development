@@ -2,7 +2,7 @@
 
 ## 📌 Deskripsi Tugas 2
 
-![gambar](images/tugas.png)
+![gambar](images/tugas2.png)
 
 #
 
