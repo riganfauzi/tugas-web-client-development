@@ -2,7 +2,7 @@
 
 ## 📌 Deskripsi Tugas 2
 
-![gambar](images/tugas2.png)
+![iamge](/Assets/images/tugas2.png)
 
 #
 

@@ -77,4 +77,4 @@ console.log(ambilInisial("John Doe")); // Output: JD
 
 #
 
-![gambar](images/tugas.png)
+![gambar](/Assets/images/tugas.png)
