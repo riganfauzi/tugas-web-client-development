@@ -1,68 +1,174 @@
-# Tugas mata kuliah Web Client Development
+# Tugas 2 Web Client Development
 
-## 📌 Deskripsi Tugas 2
+## 📌 Deskripsi Tugas 
+
+---
 
 ![iamge](/Assets/images/tugas2.png)
 
-#
+---
 
-1. Konversi Fahrenheit ke Celsius
+### 1️⃣ Konversi Fahrenheit ke Celsius
 
 Fungsi: konversiFahrenheitKeCelsius(f: number): string
 
-Deskripsi: Fungsi ini mengubah suhu dari Fahrenheit ke Celsius menggunakan rumus:
+**Deskripsi**
+Program ini menerima suhu dalam Fahrenheit dan mengonversinya ke Celsius menggunakan rumus:
+\[ C = (F - 32) \times \frac{5}{9} \]
 
-Hasil dikembalikan dalam bentuk string dengan dua angka di belakang koma.
+**Kode:**
 
-Contoh Penggunaan: 
-console.log(konversiFahrenheitKeCelsius(100)); // Output: "37.78"
+```javascript
+function fahrenheitKeCelsius(f) {
+    return ((f - 32) * 5 / 9).toFixed(2);
+}
+console.log(fahrenheitKeCelsius(100)); // Output: 37.78
+```
 
-#
+```typescript
+function fahrenheitToCelsius(f: number): string {
+    return ((f - 32) * 5 / 9).toFixed(2);
+}
+console.log(fahrenheitToCelsius(100)); // Output: 37.78
+```
 
-2. Konversi Centimeter ke Kilometer
+**Penjelasan:**
 
-Fungsi: konversiCmKeKm(cm: number): string
+- `fahrenheitToCelsius(fahrenheit)` menerima nilai suhu dalam Fahrenheit.
+- `fahrenheit - 32`: Mengurangi suhu dengan 32.
+- `* 5/9`: Mengalikan hasilnya dengan 5/9 untuk mengonversinya ke Celsius.
+- `console.log(fahrenheitToCelsius(100))`: Mencetak hasil konversi dari 100°F ke Celsius.
 
-Deskripsi:
-Fungsi ini mengonversi panjang dari centimeter ke kilometer dengan membagi angka dengan 100.000.
+---
 
-Contoh Penggunaan:
-console.log(konversiCmKeKm(100000)); // Output: "1 km"
+### 2️⃣ Konversi Centimeter ke Kilometer
 
-#
+**Deskripsi:**
+Mengonversi panjang dari centimeter ke kilometer dengan rumus:
+\[ km = cm / 100000 \]
 
-3. Cek Bilangan Genap atau Ganjil
+**Kode:**
 
-Fungsi: apakahGenap(n: number): boolean
+```javascript
+function konversiCmKeKm(cm) {
+    return cm / 100000 + " km";
+}
+console.log(konversiCmKeKm(100000)); // Output: 1 km
+```
 
-Deskripsi:
-Fungsi ini memeriksa apakah suatu bilangan bulat n adalah genap atau tidak. Jika n habis dibagi 2, maka fungsi mengembalikan true, jika tidak maka false.
+```typescript
+function konversiCentimeterKeKilometer(cm: number): string {
+    return `${cm / 100000} km`;
+}
+console.log(konversiCentimeterKeKilometer(100000)); // Output: 1 km
+```
 
-Contoh Penggunaan:
-console.log(apakahGenap(1000)); // Output: true
-console.log(apakahGenap(1001)); // Output: false
+**Penjelasan:**
 
-#
+- `cmToKm(cm)` menerima nilai panjang dalam centimeter.
+- `cm / 100000`: Mengonversi nilai cm ke km dengan membaginya dengan 100000.
+- `console.log(cmToKm(100000))`: Mencetak hasil konversi dari 100000 cm ke km.
 
-4. Menghapus Kemunculan Pertama dari Substring dalam String
+---
 
-Fungsi: hapusKemunculanPertama(teks: string, cari: string): string
+### 3️⃣ Menentukan Bilangan Ganjil atau Genap
 
-Deskripsi:
-Fungsi ini menghapus kemunculan pertama dari substring yang diberikan dalam sebuah string menggunakan replace().
+**Deskripsi:**
+Fungsi ini menerima bilangan bulat \( n \) dan mengembalikan `true` jika ganjil dan `false` jika genap.
 
-Contoh Penggunaan:
-console.log(hapusKemunculanPertama("Hello world", "ell")); // Output: "Ho world"
+**Kode:**
 
-#
+```javascript
+function isEven(n) {
+    return n % 2 !== 0;
+}
+console.log(isEven(1000)); // Output: true
+console.log(isEven(1001)); // Output: false
+```
 
-5. Cek Palindrom
+```typescript
+function genap(n: number): boolean {
+    return n % 2 !== 0;
+}
+console.log(genap(1000)); // Output: true
+console.log(genap(1001)); // Output: false
+```
 
-Fungsi: apakahPalindrom(teks: string): boolean
+**Penjelasan:**
 
-Deskripsi:
-Fungsi ini memeriksa apakah suatu string merupakan palindrom atau tidak. Palindrom adalah string yang tetap sama jika dibaca dari depan maupun belakang. Pemeriksaan dilakukan dengan membandingkan string asli dengan versi terbaliknya.
+- `isOdd(n)` menerima nilai bilangan bulat.
+- `n % 2 !== 0`: Mengecek apakah bilangan memiliki sisa bagi 2.
+- Jika sisa bagi 2 adalah 0, bilangan genap (`false`).
+- Jika tidak, bilangan ganjil (`true`).
 
-Contoh Penggunaan:
-console.log(apakahPalindrom("madam")); // Output: true
-console.log(apakahPalindrom("hello")); // Output: false
+---
+
+### 4️⃣ Menghapus Kata dari String
+
+**Deskripsi:**
+Menghapus kemunculan pertama dari kata tertentu dalam sebuah string.
+
+**Kode:**
+
+```javascript
+function removeFirstOccurrence(str, search) {
+    return str.replace(search, '');
+}
+console.log(removeFirstOccurrence("Hello world", "ell")); // Output: "Ho world"
+```
+
+```typescript
+function hapusFirstOccurrence(str: string, search: string): string {
+    return str.replace(search, '');
+}
+console.log(hapusFirstOccurrence("Hello world", "ell")); // Output: "Ho world"
+```
+
+**Penjelasan:**
+
+- `removeFirstOccurrence(str, search)` menerima string utama dan kata yang ingin dihapus.
+- `str.replace(search, "")`: Menghapus kemunculan pertama dari kata yang dicari.
+- `console.log(removeFirstOccurrence("Hello world", "ell"))`: Mencetak hasil setelah kata "ell" dihapus dari "Hello world".
+
+---
+
+### 5️⃣ Mengecek Palindrom
+
+**Deskripsi:**
+Memeriksa apakah string adalah palindrom (dibaca sama dari depan dan belakang).
+
+**Kode:**
+
+```javascript
+function isPalindrome(str) {
+    const reversed = str.split('').reverse().join('');
+    return str === reversed;
+}
+console.log(isPalindrome("madam")); // Output: true
+console.log(isPalindrome("hello")); // Output: false
+```
+
+```typescript
+function palindrome(str: string): boolean {
+    const reversed = str.split('').reverse().join('');
+    return str === reversed;
+}
+console.log(palindrome("madam")); // Output: true
+console.log(palindrome("hello")); // Output: false
+```
+
+**Penjelasan:**
+
+- `isPalindrome(str)` menerima string yang akan diperiksa.
+- `str.split('')`: Mengubah string menjadi array karakter.
+- `.reverse()`: Membalikkan urutan karakter dalam array.
+- `.join('')`: Mengubah array kembali menjadi string.
+- `str === reversed`: Membandingkan string asli dengan yang sudah dibalik.
+- `console.log(isPalindrome("madam"))`: Mencetak `true` jika "madam" adalah palindrom.
+
+---
+
+## Kesimpulan
+
+Tugas-tugas ini membantu saya lebih memahami dasar pemogramman, seperti operasi matematika, manipulasi string dan juga penggunaanya fungsi dalam javascript maupun typescript. 
+
